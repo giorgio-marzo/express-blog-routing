@@ -16,3 +16,18 @@ router.get('/', (req, res) =>{
 router.get('/:id', (req, res) =>{
     res.send(`post con id: ${req.params.id} `)
 })
+
+// store
+router.post('/', (req, res) =>{
+    res.send(`aggiunta nuovo post`)
+})
+
+//update
+router.put('/:id', (req, res) =>{
+    res.send(`modifica totale post con id: ${req.params.id} `)
+})
+
+//modify
+router.patch('/:id', (req, res) =>{
+    res.send(`modifica parziale post con id: ${req.params.id} `)
+})
