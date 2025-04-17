@@ -20,5 +20,5 @@ app.listen(port, () => {
 //inserisco rotta base
 
 app.get('/', (req, res) =>{
-    res.send('Server del mio blog modificabile')
+    res.send('Rotta Principale')
 })
