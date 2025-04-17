@@ -11,6 +11,14 @@ const app = express()
 
 const port = 3000;
 
+// import router
+
+const routerPost = require('./routers/post.js')
+
+// utilizzo il router per definire rotte col prefisso post
+
+app.use('/posts', routerPost)
+
 // diciamo al server di rimanere in ascolto su la suddetta porta
 
 app.listen(port, () => {
